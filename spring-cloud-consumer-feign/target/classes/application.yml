@@ -1,0 +1,17 @@
+server:
+  port: 80
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+spring:
+  #服务名
+  application:
+    name: feign-consumer
+  devtools:
+    restart:
+      enabled: true
+#熔断器
+feign:
+  hystrix:
+    enabled: true

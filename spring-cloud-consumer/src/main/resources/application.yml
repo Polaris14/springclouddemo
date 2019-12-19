@@ -1,0 +1,12 @@
+server:
+  port: 80
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+spring:
+  application:
+    name: ribbon-consumer
+  devtools:
+    restart:
+      enabled: true
